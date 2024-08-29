@@ -20,7 +20,7 @@ public class SwaggerConfig implements WebMvcConfigurer {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(apiInfo())
-                .servers(List.of(new Server().url("http://localhost:8080").description("Servidor Local")))
+                .servers(List.of(new Server().url("https://desagio-alunos-generation-2dad7c85d2a6.herokuapp.com").description("Servidor Local")))
                 .components(new io.swagger.v3.oas.models.Components()
                         .addResponses("200", new ApiResponse().description("Sucesso!"))
                         .addResponses("201", new ApiResponse().description("Criado!"))
